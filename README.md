@@ -1,6 +1,6 @@
 # PizzaApp
 Simple app to order pizza online.
-#### version: __0.2.0__
+
 
 ### Get started
 
