@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link th:insert="snippets/header.html :: headerCSS"></linkth:insert>
+   <!-- <link rel="stylesheet" th:href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />-->
+
+    <title>Title</title>
+</head>
+<body>
+<link th:insert="snippets/header.html :: header"></linkth:insert>
+<section class="menu" id="menu">
+
+    <div class="menu-content" style="margin:auto; margin-top:10rem;">
+        <div class="in-box" style="width: 120rem;  margin:auto;">
+
+
+            <img src="https://th.bing.com/th/id/OIP.ildCrKedl5wZSDvDouexMQHaEo?pid=ImgDet&rs=1" alt="">
+            <div class="in-content">
+                <div class="star">
+
+                    <h2>Adding New Pizza</h2>
+                    <div class="price"><h2 >Dashboard to add details about new pizza</h2></div>
+                    <form   action="/admin/pizza" method="get" >
+                        <button class="btn">
+                            ADD PIZZA
+                            <i class="fas fa-plus-circle"></i></button>
+                    </form>
+                    <!--                    <a class="btn" href="/addToCart/1">Add to Cart</a>-->
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="copyright">
+    <p>Design By&copy; PGS Intern Batch Group-2</p>
+    <div class="social">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-pinterest"></i>
+        <i class="fab fa-google-plus"></i>
+    </div>
+</div>
+
+</body>
+
+</html>
