@@ -36,7 +36,6 @@ public class AdminController {
      @GetMapping("/pizza")
      public String adminPizza(Model model){
           model.addAttribute("pizzas", pizzaRepository.findAll());
-          System.out.println(pizzaRepository.findAll());
           return "pizzaDashboard";
      }
 
