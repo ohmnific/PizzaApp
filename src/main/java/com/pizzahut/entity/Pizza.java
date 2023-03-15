@@ -19,6 +19,7 @@ public class Pizza {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private int id;
     private String name;
+    private String image;
     private String description;
     private int price;
 }

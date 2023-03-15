@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Optional;
 
 @Controller
@@ -35,6 +36,7 @@ public class AdminController {
      @GetMapping("/pizza")
      public String adminPizza(Model model){
           model.addAttribute("pizzas", pizzaRepository.findAll());
+          System.out.println(pizzaRepository.findAll());
           return "pizzaDashboard";
      }
 
