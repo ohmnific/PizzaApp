@@ -18,7 +18,7 @@ public class CartController {
     @GetMapping("/addToCart/{id}")
     public String addToCart(@PathVariable int id){
         GlobalData.cart.add(pizzaRepository.findById(id).get());
-        return "redirect:/home";
+        return "redirect:/home#menu";
     }
 
     @GetMapping("/cart")

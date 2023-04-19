@@ -5,9 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.HashMap;
-import java.util.Map;
-
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
@@ -22,9 +19,5 @@ public class Orders {
     private String pizza_ids;
 
     private double order_total;
-
-
-
-
 
 }
